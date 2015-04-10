@@ -1,0 +1,21 @@
+{
+  "name": "talamoig-centosrepos",
+  "version": "0.1.0",
+  "author": "talamoig",
+  "summary": "Module for using CentOS repos",
+  "license": "Apache 2.0",
+  "source": "http://github.com/talamoig/centosrepos.git",
+  "project_page": "https://github.com/talamoig/centosrepos",
+  "issues_url": "https://github.com/talamoig/centosrepos/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+      ]
+    }]
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+
