@@ -47,5 +47,10 @@ class centosrepos (
     ensure  => present,
     content => template('centosrepos/CentOS-base.erb')
   }
-  
+
+  file{'/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6':
+    ensure => present,
+    source => 'puppet:///centosrepos/RPM-GPG-KEY-CentOS-6'
+  }
+
 }
