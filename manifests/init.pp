@@ -50,7 +50,7 @@ class centosrepos (
 
   file{'/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6':
     ensure => present,
-    source => 'puppet:///centosrepos/RPM-GPG-KEY-CentOS-6'
+    source => 'puppet:///modules/centosrepos/RPM-GPG-KEY-CentOS-6'
   }
 
 }
