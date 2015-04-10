@@ -1,4 +1,4 @@
-# centosrepos
+# Puppet centosrepos module
 
 #### Table of Contents
 
@@ -36,16 +36,16 @@ To create the CentOS repositories but will all repositories disabled do:
 
 To enable only the base repo:
 
-   class {'centosrepos':
-       enable_base => true
-   }
+    class {'centosrepos':
+        enable_base => true
+    }
 
 To enable base and extras:
 
-   class {'centosrepos':
-       enable_base   => true,
-       enable_extras => true,
-   }
+    class {'centosrepos':
+        enable_base   => true,
+        enable_extras => true,
+    }
 
 The list of available CentOS repositories is:
 
