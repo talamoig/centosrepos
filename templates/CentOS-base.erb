@@ -3,7 +3,7 @@ name=CentOS-$releasever - Base
 mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
 #baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
 gpgcheck=1
-enabled=<%= @enable_base? ? "1" : "0" %>
+enabled=<%= @enable_base? "1" : "0" %>
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 
 #released updates
@@ -12,7 +12,7 @@ name=CentOS-$releasever - Updates
 mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
 #baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
 gpgcheck=1
-enabled=<%= @enable_updates? ? "1" : "0" %>
+enabled=<%= @enable_updates? "1" : "0" %>
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 
 #additional packages that may be useful
@@ -21,7 +21,7 @@ name=CentOS-$releasever - Extras
 mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
 #baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/
 gpgcheck=1
-enabled=<%= @enable_extras? ? "1" : "0" %>
+enabled=<%= @enable_extras? "1" : "0" %>
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 
 #additional packages that extend functionality of existing packages
@@ -30,7 +30,7 @@ name=CentOS-$releasever - Plus
 mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra
 #baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
 gpgcheck=1
-enabled=<%= @enable_plus? ? "1" : "0" %>
+enabled=<%= @enable_plus? "1" : "0" %>
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 
 #contrib - packages by Centos Users
@@ -39,5 +39,5 @@ name=CentOS-$releasever - Contrib
 mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=contrib&infra=$infra
 #baseurl=http://mirror.centos.org/centos/$releasever/contrib/$basearch/
 gpgcheck=1
-enabled=<%= @enable_contrib? ? "1" : "0" %>
+enabled=<%= @enable_contrib? "1" : "0" %>
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6

@@ -43,7 +43,7 @@ class centosrepos (
   $enable_contrib = false,
 ){
   
-  file{'/etc/yum.repos/CentOS-base.repo':
+  file{'/etc/yum.repos.d/CentOS-base.repo':
     ensure  => present,
     content => template('centosrepos/CentOS-base.erb')
   }
